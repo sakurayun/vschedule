@@ -4,7 +4,7 @@ import api from './api/$api';
 
 const fetchConfig: FetchConfig = {
   // credentials: 'include',
-  baseURL: 'https://api.vschedule.app',
+  baseURL: 'https://api.vschedule.vup.news',
   throwHttpErrors: true,
 };
 
