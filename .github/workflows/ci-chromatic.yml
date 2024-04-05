@@ -45,6 +45,6 @@ jobs:
         with:
           autoAcceptChanges: main
           exitZeroOnChanges: true
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          projectToken: chpt_8ebae9f4e63cacb
           storybookBuildDir: packages/@neet/vschedule-client/storybook-static
           token: ${{ secrets.GITHUB_TOKEN }}
