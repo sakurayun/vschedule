@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Tokyo'
-      DATABASE_URL: mysql://user:password@localhost:3306/test
+      DATABASE_URL: mysql://vschedule:pcypftJAyTSW3jhW@138.201.35.213:3306/vschedule
       YOUTUBE_DATA_API_KEY: ${{ secrets.YOUTUBE_DATA_API_KEY }}
       YOUTUBE_WEBSUB_HMAC_SECRET: test
 
@@ -29,10 +29,10 @@ jobs:
         ports:
           - 3306:3306
         env:
-          MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: test
-          MYSQL_USER: user
-          MYSQL_PASSWORD: password
+          MYSQL_ROOT_PASSWORD: pcypftJAyTSW3jhW
+          MYSQL_DATABASE: vschedule
+          MYSQL_USER: vschedule
+          MYSQL_PASSWORD: pcypftJAyTSW3jhW
         options: >-
           --health-cmd "mysqladmin ping"
           --health-interval 10s
